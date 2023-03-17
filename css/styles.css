@@ -29,12 +29,12 @@ body {
   line-height: 1.2;
 }
 
-.logo link {
+.logo.link {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: var(--secondary-text-color) ;
   text-decoration: none;
 }
 
@@ -42,26 +42,36 @@ body {
   list-style: none;
 }
 
-.site-nav {
+.site-nav .list {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  text-decoration: none;
 }
 
-.list.site-nav:hover,
-.list.site-nav:focus {
+.site-nav .list:hover,
+.site-nav .list:focus {
+  color: var(--title-text-color);
+}
+
+.site-nav .link {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
     color: var(--primary-text-color);
     
 }
-
-.list.site-nav {
-    color: var(--secondary-text-color) ;
-    
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .contacts {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .contacts:hover,
@@ -144,7 +154,6 @@ background-color: var(--secondary-button-color);
 }
 
 .button.secondary {
-  color: var(--secondary-text-color);
   background-color: var(--secondary-button-color);
   font-weight: 500;
   font-size: 16px;
@@ -152,12 +161,12 @@ background-color: var(--secondary-button-color);
   cursor: pointer;
 }
 
+.button.secondary .blue {
+  background-color: var(--accent-color);
+}
+
 .accent {
   color: var(--accent-color);
-}
-.accent.button {
-    color: var(--secondary-text-color);
-    background-color: var(--accent-color);
 }
 
 .button.secondary:hover,
@@ -170,4 +179,12 @@ background-color: var(--secondary-button-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  text-decoration: none;
+}
+
+.footer .logo {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
