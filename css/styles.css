@@ -27,6 +27,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
 }
 
 .logo.link {
@@ -42,6 +44,14 @@ body {
   list-style: none;
 }
 
+.site-nav {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
 .site-nav .list {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -50,9 +60,9 @@ body {
   text-decoration: none;
 }
 
-.site-nav .list:hover,
-.site-nav .list:focus {
-  color: var(--title-text-color);
+.site-nav:hover,
+.site-nav:focus {
+  color: var(--accent-color);
 }
 
 .site-nav .link {
@@ -161,8 +171,9 @@ background-color: var(--secondary-button-color);
   cursor: pointer;
 }
 
-.button.secondary .blue {
+.button.secondary.blue {
   background-color: var(--accent-color);
+  color: var(--title-text-color);
 }
 
 .accent {
@@ -182,7 +193,8 @@ background-color: var(--secondary-button-color);
   text-decoration: none;
 }
 
-.footer .logo {
+footer .logo {
+  font-family: Raleway;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 26px;
