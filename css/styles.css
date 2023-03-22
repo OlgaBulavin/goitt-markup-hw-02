@@ -81,6 +81,9 @@ body {
 
 .contacts {
   color: var(--primary-text-color);
+  font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
   text-decoration: none;
 }
 
@@ -141,17 +144,25 @@ background-color: var(--secondary-button-color);
   line-height: 1.2;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .title-name {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  text-decoration: none;
 }
 
 .discr {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
+  text-decoration: none;
 }
+
 .button.primary {
   color: var(--title-text-color);
   background-color: var(--accent-color);
@@ -185,6 +196,7 @@ background-color: var(--secondary-button-color);
   color: var(--title-text-color);
   background-color: var(--accent-color);
 }
+
 .footer {
   color: var(--title-text-color);
   font-style: normal;
@@ -199,4 +211,11 @@ footer .logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+}
+
+footer .contacts {
+  font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
